@@ -7,6 +7,13 @@ heroImage: '/blog-placeholder-2.jpg'
 
 KaTex
 $X_t$
+block style also works
+$$
+X = \{ X_t : t \in T \}
+$$
 ```
 $X_t$
+$$
+X = \{ X_t : t \in T \}
+$$
 ```
