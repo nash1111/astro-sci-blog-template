@@ -22,3 +22,17 @@ import "../../styles/scroll-progress-bar.css";
 <BlogPost {...post.data}>
   <Content />
 </BlogPost>
+
+<script type="module">
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('code').forEach((codeEl) => {
+      const button = document.createElement('button');
+      button.className = 'copy-btn';
+      button.innerText = 'Copy';
+      button.addEventListener('click', () => {
+        navigator.clipboard.writeText(codeEl.innerText);
+      });
+      codeEl.appendChild(button);
+    });
+  });
+</script>
