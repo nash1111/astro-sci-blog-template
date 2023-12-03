@@ -9,3 +9,9 @@ KaTeX: Enaled on all pages
 yarn install
 yarn dev
 ```
+
+### deploy manually
+```
+wrangler login
+npx wrangler pages deploy dist
+```
